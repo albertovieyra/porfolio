@@ -97,7 +97,7 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url(/img/home2.png) no-repeat;
+    background: url(img/home2.png) no-repeat;
     object-fit: cover;
     background-size: cover;
     background-position: left;
