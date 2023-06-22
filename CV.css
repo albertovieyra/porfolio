@@ -1,0 +1,138 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #262222;
+}
+
+
+
+.color-1 {
+    position: absolute;
+    width: 800px;
+    margin-left: 70%;
+    height: 800px;
+    background: #0c366187;
+    border-radius: 50%;
+    z-index: -10;
+    filter: blur(100000px);
+}
+
+.color-2 {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    margin: 40% 35%;
+    border-radius: 50%;
+    background: #1010879d;
+    z-index: -15;
+    filter: blur(100000px);
+}
+
+.color-3 {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background: #22435965;
+    z-index: -10;
+    filter: blur(100000px);
+}
+
+.cv {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    background-color: rgba(118, 115, 118, 0.132);
+    padding: 20px;
+    border-radius: 10px;
+    border-top: rgba(168, 158, 158, 0.684) solid 2px;
+    border-left: rgba(164, 157, 157, 0.557) solid 2px;
+    box-shadow: 2px 7px 6px 7px rgba(0, 0, 0, .5);
+    color: rgba(249, 247, 247, 0.8);
+    z-index: 200;
+    text-shadow: 2px 7px 6px 7px rgba(0, 0, 0, 0.9);
+
+    text-shadow: 1px 1px 2px rgba(33, 151, 235, 0.5),
+        -1px -1px 2px rgba(3, 99, 243, 0.725);
+
+
+}
+
+.right-column {
+    grid-area: 1fr;
+
+}
+
+.right-column img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.left-column {
+    grid-area: 1fr;
+}
+
+.contact a {
+    color: rgba(233, 237, 240, 0.976);
+    text-shadow: 2px 2px 4px rgba(182, 21, 222, 0.5),
+        -2px -2px 4px rgba(230, 12, 238, 0.5);
+}
+
+
+.cv h1 {
+    font-size: 1.5rem;
+    animation: floating 2s ease-in-out infinite;
+    color: rgba(255, 255, 255, 0.824);
+    text-shadow: 2px 2px 4px rgba(21, 192, 222, 0.5),
+        -2px -2px 4px rgba(12, 196, 238, 0.5);
+}
+
+
+
+
+.name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #888;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+@media (max-width: 430px) {
+    .cv {
+        display: grid !important;
+        width: 100%;
+        height: 100%;
+    }
+
+    .right-column {}
+
+    .left-column {}
+}
+
+@keyframes floating {
+    5% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    90% {
+        transform: translateY(0);
+    }
+}
